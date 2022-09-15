@@ -5,13 +5,13 @@ class MultithreadingDemo implements Runnable {
     {
         try {
             // Displaying the thread that is running
-        	int avg=0;
+        	double avg=0;
            for(int i=1;i<=50;i++)
            {
         	   avg=(avg+i);
         	   System.out.println("Current position is "+i);
            }
-           System.out.println("the average is "+(avg/50));
+           System.out.println("*****the average is "+(avg/50)+"*****");
         }
         catch (Exception e) {
             // Throwing an exception
