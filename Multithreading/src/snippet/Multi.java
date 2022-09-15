@@ -8,9 +8,10 @@ class MultithreadingDemo implements Runnable {
         	int avg=0;
            for(int i=1;i<=50;i++)
            {
-        	   avg=(avg+i)/2;
-        	   System.out.println("Current position is "+i+" and the average is "+avg);
+        	   avg=(avg+i);
+        	   System.out.println("Current position is "+i);
            }
+           System.out.println("the average is "+(avg/50));
         }
         catch (Exception e) {
             // Throwing an exception
@@ -24,7 +25,7 @@ class MultithreadingDemo2 implements Runnable {
         try {
             // Displaying the thread that is running
             for(int i=0;i<=50;i++)
-        	System.out.println(i*i);
+        	System.out.println("Square of "+i+" is "+i*i);
             
             }
         catch (Exception e) {
